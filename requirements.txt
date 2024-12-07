@@ -6,4 +6,4 @@ scikit-learn
 Flask
 catboost
 xgboost
-optuna
+gunicorn
