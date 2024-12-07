@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction Result</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <p>Predicted Iris Species is <b>{{ prediction }}</b></p>
+                <p>The model is <b>{{ confidence_percent }}%</b> confident about the predictions</p>
+                <a href="/">Try Again</a>
+            </div>
+        </div>
+    </body>
+</html>

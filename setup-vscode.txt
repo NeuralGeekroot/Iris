@@ -1,0 +1,4 @@
+conda create -n algerianForestFirePrediction python=3.11 
+conda activate algerianForestFirePrediction
+pip install ipykernel
+pip install -r requirements.txt

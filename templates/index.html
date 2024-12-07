@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iris Prediction</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <form action="/predict" method="post">
+                <div class="title">
+                    <h2>Input Features</h2>
+                </div>
+                <div class="input-fields">
+                    <label for="SepalLength">Sepal Length:
+                    <input type="text" name="SepalLength" class="input-field" required="required" placeholder="Enter sepal length" /></label>
+                    <label for="SepalWidth">Sepal Width:
+                    <input type="text" name="SepalWidth" class="input-field" required="required" placeholder="Enter sepal width" /></label>
+                    <label for="PetalLength">Petal Length:
+                    <input type="text" name="PetalLength" class="input-field" required="required" placeholder="Enter petal length" /></label>
+                    <label for="PetalWidth">Petal Length:
+                    <input type="text" name="PetalWidth" class="input-field" required="required" placeholder="Enter petal width" /></label>
+                    <button type="submit" class="submit-btn">Predict</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
